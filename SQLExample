@@ -1,0 +1,4 @@
+SELECT DISTINCT Clientes.Nombre, Clientes.Apellido, Clientes.ID
+FROM [Clientes]
+LEFT JOIN Ventas ON Ventas.Id_cliente = Clientes.ID
+WHERE Importe >= 100000 AND  OrderDate >= '2022-04-01' AND  '2023-04-01' >= OrderDate
